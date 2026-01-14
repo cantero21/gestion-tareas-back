@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/tareas")
-@CrossOrigin("https://stalwart-paletas-d6b1a7.netlify.app/tareas")
+@CrossOrigin(origins = "https://stalwart-paletas-d6b1a7.netlify.app")
 public class TareaController {
 
     @Autowired
