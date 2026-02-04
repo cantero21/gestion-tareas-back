@@ -19,7 +19,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tareas")
-@CrossOrigin(origins = "https://stalwart-paletas-d6b1a7.netlify.app")
+@CrossOrigin(origins = {
+        "https://stalwart-paletas-d6b1a7.netlify.app",
+        "http://localhost:4200"
+})
 @RequiredArgsConstructor
 public class TareaController {
 

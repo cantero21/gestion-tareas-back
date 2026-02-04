@@ -21,7 +21,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://stalwart-paletas-d6b1a7.netlify.app")
+@CrossOrigin(origins = {
+        "https://stalwart-paletas-d6b1a7.netlify.app",
+        "http://localhost:4200"
+})
 public class AuthController {
 
     private final UsuarioRepository usuarioRepository;

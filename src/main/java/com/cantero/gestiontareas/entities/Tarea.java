@@ -28,7 +28,7 @@ public class Tarea {
 
 
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true ,  fetch = FetchType.EAGER)
     @JoinColumn(name = "tarea_id") // Esto crea la columna foránea en la tabla 'pasos'
     private List<Paso> pasos = new ArrayList<>();
 
